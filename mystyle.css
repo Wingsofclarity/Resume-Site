@@ -1,5 +1,10 @@
+:root{
+	--p-spacing: 1em;
+}
+
 body {
     background-color: white;
+	background-image: url("images/background.jpg");
 }
 
 
@@ -7,4 +12,6 @@ h1, h2, h3, p {
 	border: 1px dashed rgba(10,10,10,0.2);
 	margin: 50px;
 	text-align: center;
+	margin-top:var(--p-spacing);
+	margin-bottom:var(--p-spacing);
 }
