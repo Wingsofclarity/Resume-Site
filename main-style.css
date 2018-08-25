@@ -2,9 +2,15 @@
 	--p-spacing: 1em;
 }
 
+#grad {
+
+	background-image: linear-gradient(red,yellow);
+}
+
 body {
-    background-color: white;
-	background-image: url("images/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
