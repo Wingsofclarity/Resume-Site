@@ -2,22 +2,25 @@
 	--p-spacing: 1em;
 }
 
-#grad {
-
-	background-image: linear-gradient(red,yellow);
-}
-
 body {
+	background-color: #4A97D6;
+	background: linear-gradient(#4A97D6,#CEDAE2);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
 	border: 1px dashed rgba(10,10,10,0.2);
 	margin: 50px;
 	text-align: center;
-	margin-top:var(--p-spacing);
-	margin-bottom:var(--p-spacing);
+	margin-top: var(--p-spacing);
+	margin-bottom: var(--p-spacing);
 }
+
+a {
+	white-space: nowrap;
+}
+
+
