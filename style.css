@@ -2,25 +2,55 @@
 	--p-spacing: 1em;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
-	background-color: #4A97D6;
+	background-color: #4E9EDE;
 	background: linear-gradient(#4A97D6,#CEDAE2);
+	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 
-h1, h2, h3, p, a {
-	border: 1px dashed rgba(10,10,10,0.2);
-	margin: 50px;
+h1, h2, h3{
 	text-align: center;
 	margin-top: var(--p-spacing);
 	margin-bottom: var(--p-spacing);
 }
 
-a {
+p{
+	margin-top: var(--p-spacing);
+	margin-bottom: var(--p-spacing);
+}
+
+p.bar{
+	text-align: center;
+	margin-top: var(--p-spacing);
+	margin-bottom: var(--p-spacing);
+}
+
+p, p.pitch {
+	margin-right: 370px;
+	margin-left: 370px;
+}
+
+p.pitch {
+	font-style: italic;
+}
+
+a.site {
 	white-space: nowrap;
+	margin: 8px;
+}
+
+a.current{
+	white-space: nowrap;
+	margin: 8px;
+	font-weight: bold;
 }
 
 
