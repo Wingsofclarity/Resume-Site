@@ -1,0 +1,185 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage[a4paper, textwidth=120ex ]{geometry}
+\usepackage{titling}
+\usepackage{array}
+\usepackage{varwidth}
+
+\setlength{\droptitle}{-9em}
+\pretitle{\begin{center}\Huge}
+\title{Résumé: Gustav Rosén}
+\posttitle{\par\end{center}\vskip 0em }
+
+\preauthor{}
+\author{}
+\postauthor{}
+\predate{}
+\date{}
+\postdate{}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{18pt}{3pt} % Spacing around sections
+
+\newcommand{\pair}[2]{\textsc{\footnotesize{#1}} & \footnotesize{#2} }
+\newcommand{\personal}[2]{\pair{#1:}{#2}}
+
+\newcommand{\we}[4]{#1 \hspace{1em}& \textit{at #2} & #3 \\ \multicolumn{3}{l}{\indent \textit{#4}}\\ }
+
+%Skills
+\newcommand{\skill}[1]{\mbox{#1\hspace{1.2ex}}}
+\newcommand{\cat}[1]{\vspace{2ex}
+
+\noindent \textbf{#1} 
+
+\begin{tabular}{lllllllllllllll}}
+\newcommand{\catend}{\end{tabular}}
+%End Skills
+
+%Education
+\newcommand{\program}[4]{#1 & \textit{at #2} & #3-#4 \\}
+\newcommand{\course}[5]{\indent #1 & #2c & \textit{#3} & \textit{#4} & Grade: #5\\}
+\newcommand{\subject}[1]{\\
+\textbf{#1}\\}
+
+%Surpressing footnotes
+\renewcommand{\footnote}[1]{}
+
+\pagestyle{empty}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+
+
+\section{Work Experience}
+\begin{tabular}{lll}
+\we{Game Designer, Sound Designer}{University of Skövde}{2012-2013}{Wrote story and designed mechanics and sound}
+\indent \textit{for a game on request of Skövde County.} \\
+\we{Thesis Student}{Livsmedelsverket}{2018 March-Present}{Researching PDF extractors.}
+\we{Café Assistant}{Församlingsgården i Storvreta}{2009 and 2010}{Selling, Cash-Desk Responsible.}
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{lll}
+\program{Bachelor Program in Computer Science}{Uppsala University}{2014}{2018\footnote{Currently ongoing.}}
+\program{Game Development, Sound and Music}{University of Skövde}{2012}{2013}
+\program{Natural Science, English+}{Rosendalsgymnasiet}{2009}{2012}
+\end{tabular}
+
+\section{Skills}
+
+\cat{Technical Skills}%--%
+\skill{Object-Oriented Design}&
+\skill{Functional Programming}&
+\skill{Git}&
+\skill{Concurrent Programming}\\
+\skill{Parallel Programming}&
+\skill{Gameplay Programming}&
+\skill{Unity}&
+\skill{Unit Testing}\\
+\skill{Test-Driven Development}&
+\skill{Human-Computer Interaction}&
+\skill{Databases}&
+\skill{SQL}\\
+\catend
+
+\cat{Programming Languages}%--%
+\skill{C}&
+\skill{C\#}&
+\skill{C++}&
+\skill{Java}&
+\skill{JavaScript}&
+\skill{Python}&
+\skill{Go}&
+\skill{Haskell}&
+\skill{Erlang}\\
+\catend
+
+\cat{Audio}%--%
+\skill{Sound Design}&
+\skill{Audio Mixing}&
+\skill{Piano}&
+\skill{Music Composition}&
+\skill{Audio Recording}&
+\skill{Audio Mastering}\\
+\catend
+
+\cat{Language}
+\skill{Swedish Fluent}&
+\skill{English Fluent}\\
+\catend
+
+\cat{Personal Traits}%--%
+\skill{Ambitious}&
+\skill{Passionate}&
+\skill{Thorough}&
+\skill{Quick Learner}&
+\skill{Open Minded}&
+\skill{Eye for Detail}\\
+\catend
+
+\cat{Other}%--%
+\skill{Drivers License}&
+\skill{\LaTeX}&
+\skill{Game Design}\\
+\catend
+
+\section{Personal Data}
+\begin{tabular}{rlrl}
+\personal{Name}{Gustav Axel Rosén \hspace{9em}}&
+\personal{Email}{gustav.rosn@gmail.com}\\
+\personal{Date of birth}{1993-01-04}&
+\personal{Age}{25}\\
+\personal{City}{Uppsala, 75272}&
+\personal{Address}{Flogstavägen 63F}\\
+\personal{Phone}{+46705096626}\\
+\par
+\end{tabular}
+
+\clearpage
+\section{Courses University Level}
+\begin{tabular}{llrll}
+\subject{Computer Science}
+\course{Degree Project C in Computer Science\footnote{Currently ongoing.}}{15}{1DT340}{Uppsala University}{-}
+\course{Computer Architecture}{10}{1DT093}{Uppsala University}{5}
+\course{Computer Networks}{5}{1DT052}{Uppsala University}{3}
+\course{Database Design}{5}{1DL301}{Uppsala University}{4}
+\course{Human-Computer Interaction}{5}{1MD016}{Uppsala University}{4}
+\course{Imperative and Object-Oriented  }{20}{1DL221}{Uppsala University}{3}
+\indent\indent Programming Methodology \\
+\course{Information Technology}{10}{1DT051}{Uppsala University}{G}
+\course{Operating Systems and }{15}{1DT096}{Uppsala University}{4}
+\indent\indent Process-Oriented Programming \\
+\course{Program Design and Data Structures}{20}{1DL201}{Uppsala University}{4}
+\course{Programming Fundamentals with C++}{7.5}{DA147}{University of Skövde}{G}
+
+\subject{Math}
+\course{Algebra}{5}{1MA004}{Uppsala University}{3}
+\course{Basic Course in Mathematics}{5}{1MA010}{Uppsala University}{5}
+\course{Linear Algebra and Geometry}{5}{1MA025}{Uppsala University}{3}
+\course{Logic and Proof Techniques}{5}{1MA027}{Uppsala University}{3}
+\course{Scientific Computing and Calculus}{10}{1TD333}{Uppsala University}{3}
+
+\subject{Music and Sound Design}
+\course{Digital Sound Design}{7.5}{ME156G}{University of Skövde}{G}
+\course{Computer-Based Audio }{7.5}{DA147G}{University of Skövde}{G}
+\indent\indent and Music Production\\
+\course{Music / Theory and Practice}{7.5}{MU318G}{University of Skövde}{G}
+\course{Project in Game Development - Music}{15}{MU317G}{University of Skövde}{G}
+\course{Sound Engineering I}{7.5}{MG1012}{University of Örebro}{G}
+\course{Sound Engineering II}{7.5}{MG1013}{University of Örebro}{VG}
+\course{Computer-Based Music Production}{15}{MU319G}{University of Skövde}{VG}
+\indent\indent in Computer Games and Animations\\
+
+\subject{Other}
+\course{Game Design}{7.5}{2AD148}{Uppsala University}{G}
+\course{Computer Game Analysis}{7.5}{ME123G}{University of Skövde}{G}
+\course{Digital Cultures}{7.5}{ME111G}{University of Skövde}{G}
+\course{Cognitive Science: Cognition and Psychology}{7.5}{KB118G}{University of Skövde}{G}
+\end{tabular}
+
+\end{document}
