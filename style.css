@@ -2,14 +2,15 @@
 	--p-spacing: 1em;
 }
 
+
+
 html, body {
-	height: 100%;
+	height: 100%; 
 }
 
 body {
-	background-color: #4E9EDE;
-	background: linear-gradient(#4A97D6,#CEDAE2);
-	height: 100%;
+	background-color: #4E9EDE; 
+	background: linear-gradient(#4A97D6,#CEDAE2); /*Blue*/
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -18,19 +19,17 @@ body {
 }
 
 
+/* Headers */
 h1, h2, h3{
 	text-align: center;
 	margin-top: var(--p-spacing);
 	margin-bottom: var(--p-spacing);
 }
 
-p{
-	margin-top: var(--p-spacing);
-	margin-bottom: var(--p-spacing);
-}
 
-p.bar{
-	text-align: center;
+
+/* Paragraphs */
+p{
 	margin-top: var(--p-spacing);
 	margin-bottom: var(--p-spacing);
 }
@@ -40,10 +39,21 @@ p, p.pitch {
 	margin-left: 370px;
 }
 
+
+/* Divisions */
+div.bar{
+	text-align: center;
+	margin-top: var(--p-spacing);
+	margin-bottom: var(--p-spacing);
+}
+
+
 p.pitch {
 	font-style: italic;
 }
 
+
+/* What the hell is a */
 a.site {
 	white-space: nowrap;
 	margin: 8px;
