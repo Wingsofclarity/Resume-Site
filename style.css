@@ -49,12 +49,26 @@ div.bar{
 	margin-bottom: var(--v-spacing);
 }
 
+div.button{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+div.center{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 /* What the hell is a */
 a.site {
 	white-space: nowrap;
 	margin: 8px;
+	/*content: url(images/button.png);*/
 }
 
 a.current{
@@ -70,5 +84,7 @@ a.current{
 	align-items: center;
 }
 
-ul{
+img.button{
+	width: 5ex;	
+	height: 5ex;	
 }
