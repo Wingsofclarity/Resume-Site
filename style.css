@@ -1,8 +1,8 @@
 :root{
-	--p-spacing: 1em;
+	--v-spacing: 1em;
+	/*--h-margins: 350px;*/
+	--h-margins: 20%;
 }
-
-
 
 html, body {
 	height: 100%; 
@@ -15,42 +15,40 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+	margin-top: var(--v-spacing);
+	margin-bottom: var(--v-spacing);
+	margin-right: var(--h-margins);
+	margin-left: var(--h-margins);
+	font-size: 130%;
 }
 
 
 /* Headers */
 h1, h2, h3{
 	text-align: center;
-	margin-top: var(--p-spacing);
-	margin-bottom: var(--p-spacing);
 }
 
+h1 { margin-top: var(--v-spacing)}
+
+h2, h3{
+	margin-top: calc(var(--v-spacing) * 2.0);
+	margin-bottom: var(--v-spacing);
+}
 
 
 /* Paragraphs */
-p{
-	margin-top: var(--p-spacing);
-	margin-bottom: var(--p-spacing);
-}
 
-p, p.pitch {
-	margin-right: 370px;
-	margin-left: 370px;
+p.pitch {
+	font-style: italic;
 }
 
 
 /* Divisions */
 div.bar{
 	text-align: center;
-	margin-top: var(--p-spacing);
-	margin-bottom: var(--p-spacing);
+	margin-bottom: var(--v-spacing);
 }
 
-
-p.pitch {
-	font-style: italic;
-}
 
 
 /* What the hell is a */
@@ -66,3 +64,8 @@ a.current{
 }
 
 
+/* Misc */
+.box {
+	display: flex;
+	align-items: center;
+}
