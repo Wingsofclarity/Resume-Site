@@ -24,19 +24,30 @@ body {
 
 
 /* Headers */
-h1, h2{
+h1, h2, h3 { /*All headers*/}
+
+h1 { 
 	text-align: center;
+	margin-top: var(--v-spacing)
 }
 
-h1 { margin-top: var(--v-spacing)}
+h2 {
+	text-align: center;
+	margin-top: calc(var(--v-spacing) * 2.0);
+	margin-bottom: var(--v-spacing);
+}
 
-h2, h3{
+h3 {
 	margin-top: calc(var(--v-spacing) * 2.0);
 	margin-bottom: var(--v-spacing);
 }
 
 
 /* Paragraphs */
+p, p.pitch{/* Alla paragraphs*/
+	margin-bottom: var(--v-spacing);
+}
+
 p.pitch {
 	font-style: italic;
 }
@@ -61,9 +72,16 @@ div.center{
     transform: translate(-50%, -50%);
 }
 
+div.box{
+	display: flex;
+	align-items: center;	
+}
 
 
-/* What the hell is a */
+
+/* References */
+a, a.site, a.current{ /*All references*/}
+
 a.site {
 	white-space: nowrap;
 	margin: 8px;
@@ -78,12 +96,7 @@ a.current{
 
 
 /* Misc */
-.box {
-	display: flex;
-	align-items: center;
-}
-
-img.button{
-	width: 5ex;	
-	height: 5ex;	
+em {
+	font-weight: bold;
+	font-size: 101%
 }
