@@ -24,15 +24,20 @@ body {
 
 
 /* Headers */
-h1, h2, h3 { /*All headers*/}
+h1, h2, h3 { /*All headers*/
+	font-weight: bold;
+}
 
 h1 { 
 	text-align: center;
+	font-size: 200%;
 	margin-top: var(--v-spacing)
+	margin-bottom: var(--v-spacing)
 }
 
 h2 {
 	text-align: center;
+	font-size: 150%;
 	margin-top: calc(var(--v-spacing) * 2.0);
 	margin-bottom: var(--v-spacing);
 }
@@ -44,7 +49,7 @@ h3 {
 
 
 /* Paragraphs */
-p, p.pitch{/* Alla paragraphs*/
+p, p.pitch {/* Alla paragraphs*/
 	margin-bottom: var(--v-spacing);
 }
 
@@ -55,8 +60,11 @@ p.pitch {
 
 /* Divisions */
 div.bar{
+	white-space: nowrap;
 	text-align: center;
+	overflow: hidden;
 	margin-bottom: var(--v-spacing);
+	margin-top: var(--v-spacing);
 }
 
 div.button{
@@ -80,18 +88,29 @@ div.box{
 
 
 /* References */
-a, a.site, a.current{ /*All references*/}
+a, a.site, a.current{ /*All references*/
+	font-size: 110%;
+    text-align: center;
+	text-decoration: none;
+    font-weight: bold;
+	white-space: nowrap;
+	margin: 3px;
+    width: 110%;
+    height: 110%;
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
 
 a.site {
-	white-space: nowrap;
-	margin: 8px;
-	/*content: url(images/button.png);*/
+    background: white;
+    color: black;
 }
 
 a.current{
-	white-space: nowrap;
-	margin: 8px;
-	font-weight: bold;
+    background: black;
+    color: white;
 }
 
 
